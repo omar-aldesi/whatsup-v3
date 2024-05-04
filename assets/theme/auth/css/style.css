@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --text-primary: #071437;
+  --text-secondary: #4c4f56;
+
+  --primary-color: #6009f0;
+  --primary-color-light: #f6f0ff;
+  --primary-color-light-2: hsla(263, 93%, 49%, 0.2);
+  --primary-color-soft: rgba(97, 9, 240, 0.12);
+
+  --secondary-color: #8105f0;
+  --secondary-color-light: #f8f5ff;
+
+  --gradient-primary: linear-gradient(
+    0deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+
+  --white: #fff;
+  --dark: #080808;
+  --light: #f9f9f9;
+  --sitebar-bg: var(--gradient-primary);
+  --border: #ededed;
+  --input-border: #dadce0;
+  --site-bg: rgb(243 243 243);
+  --card-bg: #fafafa;
+
+  --danger: #f1416c;
+  --danger-light: #fff5f8;
+
+  --success: rgb(3, 201, 136);
+  --success-light: #e8fff3;
+
+  --info: #299cdb;
+  --info-light: #f1faff;
+
+  --warning: #ffc700;
+  --warning-light: #fff8dd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 100vh;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+p {
+  margin-bottom: 0;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.btn {
+  position: relative;
+}
+.btn--primary {
+  color: var(--white);
+  background: var(--gradient-primary);
+  border-color: var(--primary-color);
+}
+.btn--info {
+  color: var(--white);
+  background: var(--info);
+  border-color: var(--info);
+}
+.btn--danger {
+  color: var(--white) !important;
+  background: var(--danger);
+  border-color: var(--danger);
+}
+
+.site-logo {
+  display: inline-block;
+  width: 200px !important;
+  margin-bottom: 30px;
+}
+
+.site-logo > img {
+  width: 100%;
+}
+
+.or {
+  position: relative;
+}
+.or:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  top: 48%;
+  right: 55%;
+  width: 120px;
+  background-color: rgb(187, 171, 171);
+}
+.or:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  top: 48%;
+  left: 55%;
+  width: 120px;
+  background-color: rgb(187, 171, 171);
+}
+
+.menu-search {
+  color: #fff;
+  background: rgb(255 255 255/10%) !important;
+}
+
+.menu-search:focus {
+  color: var(--white);
+  background: rgb(255 255 255/10%) !important;
+}
+
+.btn--primary:hover {
+  color: var(--white);
+}
+.btn--primary:hover::after {
+  opacity: 1;
+}
+
+/** template css here */
+.template-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.template:hover::before,
+.template:hover .overlay-caption {
+  opacity: 1;
+}
+
+.template {
+  position: relative;
+  text-align: center;
+  color: #012970;
+  transition: all 0.4s;
+}
+
+.d-flex-sms {
+  display: flex !important;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.template .overlay-caption {
+  transition: all 1s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: rgb(56 69 75 / 47%);
+  padding: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.scrollable-auto {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-tabs-bordered .nav-link.active {
+  background-color: var(--success) !important;
+  color: var(--white);
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: 0;
+  border: none;
+  padding: 10px 0 !important;
+}
+
+/** template css here */
+
+.login-page-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #260055;
+}
+
+.user-login-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  isolation: isolate;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.user-login-bg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login-left-section {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.login-left-section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #260055;
+  backdrop-filter: blur(4px);
+  background-blend-mode: multiply;
+  z-index: -1;
+  isolation: isolate;
+  inset: 0;
+}
+
+.login-right-section {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.login-right-section h1 {
+  color: var(--text-primary);
+  margin-bottom: 25px;
+}
+.login-right-section p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.responsive-padding {
+  padding: 10rem;
+}
+.users {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.user {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: -15px;
+  border: 2px solid var(--primary-color);
+}
+.z-3 {
+  z-index: 5;
+}
+.google-img {
+  width: 20px;
+}
+
+.form-container {
+  width: 550px;
+}
+@media screen and (max-width: 1190px) and (min-width: 768px) {
+  .form-container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .form-container {
+    width: 550px;
+  }
+}
+
+.form-container h4 {
+  font-size: 36px;
+  color: var(--light);
+}
+
+.login-page-container .form-label {
+  color: var(--info-light);
+}
+
+.login-page-container .form-container p {
+  color: var(--info-light);
+}
+.only-big-screen {
+  display: block;
+}
+.only-small-screen {
+  display: none;
+}
+input:focus {
+  outline: none;
+}
+.site--title {
+  color: var(--primary-color);
+}
+
+form .input-field {
+  width: 100%;
+  height: 50px;
+  margin-top: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #5e5e5e;
+  outline: none;
+  transition: 250ms;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+form .input-field > input {
+  border: none !important;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  padding: 0 12px;
+  color: var(--info-light);
+}
+
+form .input-field > span {
+  font-size: 26px;
+  color: var(--info-light);
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+}
+
+form .input-field > input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+.back-to-home {
+  width: fit-content;
+}

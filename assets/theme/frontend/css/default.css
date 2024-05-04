@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Color */
+  --primary: #6009f0;
+  --primary-light: hsla(263, 93%, 49%, 0.07);
+  --secondary: #8105f0;
+  --secondary-light: rgba(130, 5, 240, 0.1);
+  --primary-border: rgba(130, 5, 240, 0.4);
+  --white: #fff;
+  --dark: #000;
+  --btn-color: #fff;
+
+  --gradient: linear-gradient(-75deg, var(--primary) 31%, var(--secondary) 98%);
+
+  /* --secondary: #f3f1ff; */
+  --neutral-7: #4e4b66;
+  --neutral-6: #6e7191;
+  --neutral-5: #a0a3bd;
+  --neutral-4: #d9dbe9;
+  --neutral-3: #eff0f6;
+  --neutral-2: #d9dbe9;
+
+  /* --text-primary:#110040; */
+  --text-primary: #2d333a;
+  --text-secondary: #4c4f56;
+
+  /* Font family */
+  --font-family: "Cabin", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: var(--neutral-3); */
+  font-family: var(--font-family) !important;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.28;
+  /* font-family: var(--font-secondary); */
+}
+p,
+span,
+small {
+  margin-bottom: 0;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none !important;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+section {
+  position: relative;
+}
+
+.btn-nowrap {
+  white-space: nowrap;
+}
+main {
+  overflow: hidden;
+}

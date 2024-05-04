@@ -1,0 +1,36 @@
+.css-1{
+    height:390px;
+ }
+ .css-2{
+    height:230px;
+ }
+ .css-3{
+    height:310px;
+ }
+ .css-4{
+    height:580;
+ }
+
+ .w-15{
+    width: 10%
+ }
+
+
+#bee-plugin-container {
+    height: 800px;
+    width: 100%;
+    top: 5px;
+    bottom: 30px;
+    left: 5px;
+    right: 5px;
+}
+#integrator-bottom-bar {
+    height: 25px;
+    bottom: 0px;
+    left: 5px;
+    right: 0px;
+}
+
+.actionlist__item--send-test{
+   display: none;
+}

@@ -1,0 +1,335 @@
+@media only screen and (max-width: 424px) {
+  .filter-action,
+  .statusUpdateBtn {
+    width: 100%;
+  }
+  .filter-action button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .filter-item {
+    flex: 1 0 auto;
+  }
+}
+@media only screen and (max-width: 576px) {
+  table {
+    border: 1px solid transparent;
+    box-shadow: none;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr td:first-child {
+    padding-left: 10px;
+  }
+  table tbody tr td:before {
+    content: attr(data-label);
+    float: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  a.table_user_div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  tbody tr td:first-child {
+    padding-left: 0px;
+  }
+  table tbody tr td {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    padding: 0px 20px !important;
+    margin-bottom: 34px;
+  }
+  table .product {
+    justify-content: flex-end;
+  }
+
+  .file-tab .nav-item {
+    width: 100%;
+  }
+  .file-tab .nav-item .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo_img {
+    padding: 5px;
+    height: 59px;
+  }
+  table tbody tr td {
+    margin-top: 2rem;
+  }
+
+  .table-light,
+  .table-light > td,
+  .table-light > th {
+    background-color: #ffffff;
+  }
+  .main_content.added {
+    margin-left: 0px !important;
+  }
+  .profile_notification ul li {
+    margin-left: 5px;
+  }
+  .total_count_parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .button_group {
+    margin-left: 0rem;
+  }
+  .button_group button {
+    padding: 3px;
+    margin-right: 0.5rem;
+  }
+  .dash_board {
+    display: none;
+  }
+  .hide_small {
+    display: none;
+  }
+  .cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+  .parent_deposit_box {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .user_img_div {
+    height: 30px;
+    width: 30px;
+  }
+  .subscriber_container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .parent_pinned_project {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .error_text h3 {
+    font-size: 7rem;
+    margin-bottom: 1rem;
+  }
+  .basic_badges_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .social_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .box_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .button_conatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .text_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .user_img_div {
+    display: none;
+  }
+  .side_content {
+    margin-left: -250px;
+  }
+  .main_content.added {
+    margin-left: 0px !important;
+  }
+  .main_content {
+    margin-left: 0px;
+  }
+  .side_content.marginLeft {
+    margin-left: 0px !important;
+  }
+
+  .new-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .filter-item {
+    width: 100%;
+  }
+  .profile_notification > ul > li.profile-dropdown {
+    padding: 10px;
+  }
+  .header_sub_content {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-content {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .file-tab .nav {
+    border-radius: 10px;
+  }
+  .file-tab .nav-tabs .nav-link {
+    padding: 8px 20px !important;
+  }
+  .upload-drop-file {
+    flex: 1 0 55px;
+    width: 55px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .total_count_parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* api document */
+  .api-doc-container {
+    width: 100%;
+    padding: 0;
+  }
+  .copy-btn-container {
+    width: 100%;
+  }
+  .parent_pinned_project {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .overlay {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .vertical-tab {
+    width: 100%;
+  }
+  .sidebar {
+    transform: translateX(-250px);
+    transition: all 600ms ease;
+  }
+  .main_content {
+    margin-left: 0;
+  }
+  .header.header-sticky {
+    z-index: 2;
+  }
+  .info-inner-card {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main_content.added {
+    margin-left: 0px !important;
+  }
+  .main_content {
+    margin-left: 0;
+  }
+  .side_content.marginLeft {
+    margin-left: 0px !important;
+  }
+
+  /* api document */
+  .api-doc-container {
+    width: 100%;
+  }
+  .copy-btn-container {
+    width: 100%;
+  }
+  .api-doc-details {
+    padding: 20px 40px;
+  }
+  .new-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  .side_content {
+    margin-left: -250px;
+  }
+  .main_content.added {
+    margin-left: 0px !important;
+  }
+  .main_content {
+    margin-left: 250px;
+  }
+  .side_content.marginLeft {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  [data-sidebar="sm"] .sidebar {
+    min-height: 3235px !important;
+  }
+  [data-sidebar="sm"] .main_content {
+    min-height: 3230px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1024px) {
+  /* api document */
+  .api-doc-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .accordion-item-hover1 .accordion-button {
+    padding: 1rem 5px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .new-card-container {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .note-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 0 20px;
+    transition: 0.3s all ease;
+  }
+  .note-container > .note {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    border: 1px dashed var(--info);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .column2_absolute {
+    top: 8%;
+    padding: 0.7rem;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .column2_absolute {
+    top: 14%;
+    padding: 1.2rem;
+  }
+}
